@@ -7,6 +7,10 @@ body{
 }
 
 
+main{
+    padding: 0 20px;
+}
+
 /* ---header--- */
 
 header{
@@ -33,6 +37,7 @@ header .menu{
     gap: 30px
 }
 
+
 .menu li{
     width: 75px;
     
@@ -47,11 +52,6 @@ header .menu{
 .menu li a:hover{
     font-weight: 700;
 }
-
-main{
-    padding: 0 20px;
-}
-
 
 
 /* -----------------------banner-1------------------------ */
@@ -166,7 +166,6 @@ main{
 }
 
 .banner-2 div h2{
-    ;
     margin-bottom: 25px;
     max-width: 350px;
 }
@@ -190,7 +189,6 @@ main{
 
 
 .testimonials article{
-    z-index: ;
     background-color: hsl(219, 30%, 18%);
     padding: 40px 25px 25px;
     max-width: 360px;
@@ -275,9 +273,24 @@ main{
 
 /* ------------footer----------------- */
 footer{
-    position: relative;
-   background-color: hsl(216, 53%, 9%);
+    background-color: hsl(216, 53%, 9%);
+    display: flex;
     padding: 150px 50px ;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-logo img{
+    margin-bottom: 30px;
+}
+
+footer a{
+    text-decoration: none;
+}
+
+.footer-contact img{
+    margin-right: 15px;
 }
 
 footer p{
@@ -287,6 +300,7 @@ footer p{
 
 footer .attribution{
     position: absolute;
+    bottom: 0;
 }
 
 
