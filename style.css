@@ -1,0 +1,292 @@
+
+
+body{
+    max-width: 1440px;
+    margin: 0 auto;
+    background-color: hsl(218, 28%, 13%);
+}
+
+
+/* ---header--- */
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 80px;
+    height: 200px;
+    max-height: 200px;
+    background-color: hsl(217, 28%, 15%);
+    
+}
+
+header img{
+    min-width: 180px;
+}
+
+header h1{
+    font-size: 0;
+}
+
+header .menu{
+    display: flex;
+    gap: 30px
+}
+
+.menu li{
+    width: 75px;
+    
+}
+
+.menu li a{
+    text-decoration: none;
+    font-family: "Raleway", sans-serif;
+    
+}
+
+.menu li a:hover{
+    font-weight: 700;
+}
+
+main{
+    padding: 0 20px;
+}
+
+
+
+/* -----------------------banner-1------------------------ */
+.banner-1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: hsl(217, 28%, 15%) url(images/bg-curvy-desktop.svg) no-repeat bottom;
+    background-size: 100% 25vw ;
+}
+
+.banner-1 img{
+    max-width: 100%;
+    
+    margin-bottom: 50px;
+}
+
+.banner-1 h2{
+    max-width: 800px;
+    margin-bottom: 45px;
+}
+
+.banner-1 p{
+    font-size: 20px;
+    max-width: 600px;
+    margin-bottom: 35px;
+}
+
+.banner-1 a{
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 20px;
+    width: 280px;
+    border-radius: 40px;
+    margin-bottom: 160px;
+
+    
+}
+
+.button{
+    background: linear-gradient(to right, hsl(176, 68%, 64%), hsl(198, 60%, 50%));
+    color: white;
+    font-weight: 700;
+}
+
+.button:hover{
+    box-shadow: inset 0 0 9px black;
+    cursor: pointer;
+}
+
+
+
+
+/* ------------services------------ */
+
+.services{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px 0;
+    margin-bottom: 135px;
+}
+
+.services div{
+    text-align: center;
+    width: 50%;
+    padding: 0 20px;
+}
+
+        .services div h3::before{
+            display: block;
+            margin-bottom: 35px;
+        }
+
+        .services div:nth-child(1) h3::before {
+            content: url(images/icon-access-anywhere.svg);
+        }
+        .services div:nth-child(2) h3::before{
+            content: url(images/icon-security.svg);
+        }
+        .services div:nth-child(3) h3::before{
+            content: url(images/icon-collaboration.svg);
+        }
+        .services div:nth-child(4) h3::before{
+            content: url(images/icon-any-file.svg);
+        }
+
+.services h3{
+    font-size: 20px;
+    margin-bottom: 15px;    
+}
+
+.services p{
+    max-width: 350px;
+    margin: 0 auto;
+    font-size: 14px;
+}
+
+
+/* -----------banner-2---------------- */
+.banner-2{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 0 100px;
+    margin-bottom: 140px;
+}
+
+.banner-2 div,img{
+    max-width: 50%;
+}
+
+.banner-2 div h2{
+    ;
+    margin-bottom: 25px;
+    max-width: 350px;
+}
+
+.banner-2 div p{
+    margin-bottom: 25px;
+}
+
+.banner-2 div a{
+    color: hsl(176, 68%, 64%);
+}
+
+/* --------------testimonials--------------- */
+.testimonials{
+    display: flex;
+    justify-content: center;
+    padding: 30px 20px 0;
+    gap: 3%;
+    margin-bottom: 50px;  
+}
+
+
+.testimonials article{
+    z-index: ;
+    background-color: hsl(219, 30%, 18%);
+    padding: 40px 25px 25px;
+    max-width: 360px;
+    box-shadow: 5px 5px 5px 3px hsl(217, 28%, 15%);
+}
+
+
+.testimonials article p:first-child{
+    margin-bottom: 25px;
+}
+
+.testimonials .comment-details{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.testimonials .comment-details img{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+
+.testimonials .comment-details span{
+    font-size: 12px;
+
+}
+
+.testimonials .comment-details span:nth-child(1){
+    font-weight: 700;
+}
+
+
+
+/* ----------------registration--------------- */
+.register{
+    position: relative;
+    z-index: 1;
+    top: 100px;
+
+    width: 870px;
+    max-width: 100%;
+    background-color: hsl(217, 28%, 15%);
+    padding: 70px 20px 40px;
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px hsl(216, 50%, 4%);
+    
+}
+
+.register h2{
+    margin-bottom: 30px;
+
+}
+
+
+.register p{
+    max-width: 650px;
+    margin:0 auto 30px;
+}
+
+.register input{
+    height: 50px;
+    width: 480px;
+    max-width: 100%;
+    padding: 0 10px;
+    border-radius: 25px;
+    border: none;
+    color: gray;
+}
+
+.register button{
+    height: 50px;
+    width: 200px;
+    margin-left: 20px;
+    border: none;
+    border-radius: 25px;
+
+
+}
+
+/* ------------footer----------------- */
+footer{
+    position: relative;
+   background-color: hsl(216, 53%, 9%);
+    padding: 150px 50px ;
+}
+
+footer p{
+    max-width: 300px;
+    
+}
+
+footer .attribution{
+    position: absolute;
+}
+
+
